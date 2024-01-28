@@ -1,6 +1,6 @@
 package javaUtility.datetime;
 
-import java.time.DateTimeException;
+
 import java.time.DayOfWeek;
 import java.time.Month;
 import java.util.Calendar;
@@ -19,12 +19,12 @@ public class Date {
     private static final Month[] ms_months = Month.values();
     private static final DayOfWeek[] ms_dayOfWeeks = DayOfWeek.values();
 
-    private static boolean isValidDate(int day, int month, int year)
+     private static boolean isValidDate(int day, int month, int year)
     {
         if (day < 1 || day > 31 || month < 1 || month > 12)
             return false;
 
-        return day <= ms_months[month - 1].getDays(year);
+        return day <= ms_months[month - 1].compareTo(null);//will be change
     }
 
     private static int getTotalDaysByMonth(int month, int year)
@@ -32,7 +32,7 @@ public class Date {
         int totalDays = 0;
 
         for (int m = month - 1; m >= 1; --m)
-            totalDays += ms_months[m - 1].days;
+            totalDays += ms_months[m - 1].compareTo(null);//will be change
 
         return month > 2 && isLeapYear(year) ? totalDays + 1 : totalDays;
     }
@@ -151,7 +151,7 @@ public class Date {
     {
         int year = r.nextInt(maxYear - minYear + 1) + minYear;
         int month = r.nextInt(12) + 1;
-        int day = r.nextInt(ms_months[month - 1].getDays(year)) + 1;
+        int day = r.nextInt(ms_months[month - 1].compareTo(null)) + 1;//will be change
 
         return new Date(day, month, year);
     }
@@ -259,7 +259,7 @@ public class Date {
 
     public int getDaysOfMonth()
     {
-        return ms_months[m_month - 1].days;
+        return ms_months[m_month - 1].compareTo(getMonth());//will be change
     }
 
     public String toString()

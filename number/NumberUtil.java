@@ -17,7 +17,7 @@ public final class NumberUtil {
 		return result;
 	}
 
-	private static String numberToText3DigitsTR(int val)
+	public static String numberToText3DigitsTR(int val)
 	{
 		if (val == 0)
 			return "sıfır";
