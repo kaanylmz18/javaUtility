@@ -1,4 +1,4 @@
-package javaUtility.wrapper;
+package wrapper;
 
 public final class IntValue {
     private static final int CACHE_MIN = -128;

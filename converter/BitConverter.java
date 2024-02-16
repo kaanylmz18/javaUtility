@@ -1,4 +1,4 @@
-package javaUtility.converter;
+package converter;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

@@ -1,4 +1,4 @@
-package javaUtility.collection;
+package collection;
 
  class CSDArrayList {
     private static final int DEFAULT_CAPACITY = 10;

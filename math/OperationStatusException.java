@@ -1,4 +1,4 @@
-package javaUtility.math;
+package math;
 
 public class OperationStatusException extends RuntimeException {
     private final OperationStatus m_operationStatus;

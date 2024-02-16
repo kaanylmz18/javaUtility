@@ -1,4 +1,4 @@
-package javaUtility.datetime;
+package datetime;
 
 import java.time.DateTimeException;
 import java.util.Calendar;

@@ -1,4 +1,4 @@
-package javaUtility.math;
+package math;
 
 import static java.lang.Math.sqrt;
 

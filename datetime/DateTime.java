@@ -1,4 +1,4 @@
-package javaUtility.datetime;
+package datetime;
 
 import java.time.DayOfWeek;
 import java.time.Month;

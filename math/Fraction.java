@@ -1,5 +1,4 @@
-package javaUtility.math;
-
+package math;
 public class Fraction {
     private int m_a;
     private int m_b;

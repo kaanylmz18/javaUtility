@@ -1,4 +1,4 @@
-package javaUtility.number;
+package number;
 
 import static java.lang.Math.*;
 

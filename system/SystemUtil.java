@@ -1,4 +1,4 @@
-package javaUtility.system;
+package system;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

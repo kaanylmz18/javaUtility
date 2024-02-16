@@ -1,6 +1,6 @@
-package javaUtility.string;
+package string;
 
-import javaUtility.array.ArrayUtil;
+import array.ArrayUtil;
 
 import java.util.Random;
 
